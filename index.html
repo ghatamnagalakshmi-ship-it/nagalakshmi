@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🛍 Shopping Cart</h1>
+
+<div class="products">
+
+    <div class="product">
+        <img src="./product1.jpg">
+        <h3>Product 1</h3>
+        <p>₹1000</p>
+        <button onclick="addToCart('Product 1', 1000, 'images/product1.jpg')">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="product">
+        <img src="./product2.jpg">
+        <h3>Product 2</h3>
+        <p>₹2000</p>
+        <button onclick="addToCart('Product 2', 2000, 'images/product2.jpg')">
+            Add to Cart
+        </button>
+    </div>
+
+    <div class="product">
+        <img src="./product3.jpg">
+        <h3>Product 3</h3>
+        <p>₹3000</p>
+        <button onclick="addToCart('Product 3', 3000, 'images/product3.jpg')">
+            Add to Cart
+        </button>
+    </div>
+
+</div>
+
+<h2>Cart</h2>
+<ul id="cart"></ul>
+
+<h3>Total: ₹<span id="total">0</span></h3>
+
+<button onclick="clearCart()">🗑 Clear Cart</button>
+<button onclick="clearStorage()">Clear Storage</button>
+
+<script src="script.js"></script>
+</body>
+</html>
